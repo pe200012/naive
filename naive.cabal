@@ -1,0 +1,85 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           naive
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/pe200012/naive#readme>
+homepage:       https://github.com/pe200012/naive#readme
+bug-reports:    https://github.com/pe200012/naive/issues
+author:         pe200012
+maintainer:     1326263755@qq.com
+copyright:      2021 pe200012
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/pe200012/naive
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_naive
+  hs-source-dirs:
+      src
+  ghc-options: -O2 -Wall
+  build-depends:
+      base >=4.7 && <5
+    , data-fix
+    , directory
+    , llvm-hs-pretty
+    , llvm-hs-pure
+    , mtl
+    , process
+    , recursion-schemes
+    , text
+  default-language: Haskell2010
+
+executable naive-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_naive
+  hs-source-dirs:
+      app
+  ghc-options: -O2 -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , data-fix
+    , directory
+    , llvm-hs-pretty
+    , llvm-hs-pure
+    , mtl
+    , naive
+    , process
+    , recursion-schemes
+    , text
+  default-language: Haskell2010
+
+test-suite naive-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_naive
+  hs-source-dirs:
+      test
+  ghc-options: -O2 -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , data-fix
+    , directory
+    , llvm-hs-pretty
+    , llvm-hs-pure
+    , mtl
+    , naive
+    , process
+    , recursion-schemes
+    , text
+  default-language: Haskell2010
