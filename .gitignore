@@ -1,2 +1,5 @@
-.stack-work/
-*~
+.ccls-cache/*
+.ccls-cache/
+.stack-work/*
+.vscode/*
+*.lock
