@@ -10,7 +10,7 @@ description:    Please see the README on GitHub at <https://github.com/pe200012/
 homepage:       https://github.com/pe200012/naive#readme
 bug-reports:    https://github.com/pe200012/naive/issues
 author:         pe200012
-maintainer:     1326263755@qq.com
+maintainer:     pe1326263755@gmail.com
 copyright:      2021 pe200012
 license:        BSD3
 license-file:   LICENSE
@@ -35,6 +35,8 @@ library
       base >=4.7 && <5
     , data-fix
     , directory
+    , free
+    , lens
     , llvm-hs-pretty
     , llvm-hs-pure
     , mtl
@@ -54,6 +56,8 @@ executable naive-exe
       base >=4.7 && <5
     , data-fix
     , directory
+    , free
+    , lens
     , llvm-hs-pretty
     , llvm-hs-pure
     , mtl
@@ -75,6 +79,8 @@ test-suite naive-test
       base >=4.7 && <5
     , data-fix
     , directory
+    , free
+    , lens
     , llvm-hs-pretty
     , llvm-hs-pure
     , mtl

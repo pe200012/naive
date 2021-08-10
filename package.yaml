@@ -29,6 +29,8 @@ dependencies:
 - text
 - process
 - directory
+- lens
+- free
 
 library:
   source-dirs: src
